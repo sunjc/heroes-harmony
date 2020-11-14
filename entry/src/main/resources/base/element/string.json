@@ -1,0 +1,72 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "Tour of Heroes"
+    },
+    {
+      "name": "mainability_description",
+      "value": "heroes main page"
+    },
+    {
+      "name": "componentsability_description",
+      "value": "HarmonyOS Components"
+    },
+    {
+      "name": "dashboard",
+      "value": "Dashboard"
+    },
+    {
+      "name": "heroes",
+      "value": "Heroes"
+    },
+    {
+      "name": "top_heroes",
+      "value": "Top Heroes"
+    },
+    {
+      "name": "hero_search",
+      "value": "Hero Search"
+    },
+    {
+      "name": "my_heroes",
+      "value": "My Heroes"
+    },
+    {
+      "name": "hero_name",
+      "value": "Hero Name"
+    },
+    {
+      "name": "add",
+      "value": "Add"
+    },
+    {
+      "name": "delete",
+      "value": "Delete"
+    },
+    {
+      "name": "no",
+      "value": "No"
+    },
+    {
+      "name": "name",
+      "value": "Name"
+    },
+    {
+      "name": "hero_details",
+      "value": "Hero Details"
+    },
+    {
+      "name": "id",
+      "value": "ID"
+    },
+    {
+      "name": "back",
+      "value": "Back"
+    },
+    {
+      "name": "save",
+      "value": "Save"
+    }
+  ]
+}

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+        xmlns:ohos="http://schemas.huawei.com/res/ohos"
+        ohos:width="match_parent"
+        ohos:height="match_parent"
+        ohos:orientation="vertical"
+        ohos:padding="20vp">
+
+    <DirectionalLayout
+            ohos:width="match_parent"
+            ohos:height="match_content"
+            ohos:orientation="horizontal">
+
+        <Text
+                ohos:width="match_content"
+                ohos:height="50vp"
+                ohos:text="Hello HarmonyOS"
+                ohos:text_size="25fp"
+                ohos:text_alignment="vertical_center"
+                ohos:text_color="blue"
+                ohos:text_font="serif"
+                ohos:text_weight="700"
+                ohos:left_padding="10vp"
+                ohos:right_padding="10vp"
+                ohos:background_element="$graphic:gradient_element"/>
+
+        <Text
+                ohos:id="$+id:text_auto_font"
+                ohos:width="220vp"
+                ohos:height="50vp"
+                ohos:text="Auto Font Size"
+                ohos:text_alignment="vertical_center"
+                ohos:text_color="blue"
+                ohos:text_weight="700"
+                ohos:text_font="serif"
+                ohos:italic="true"
+                ohos:left_padding="10vp"
+                ohos:right_padding="10vp"
+                ohos:left_margin="20vp"
+                ohos:background_element="$graphic:gray_element"/>
+
+        <Text
+                ohos:id="$+id:text_auto_scrolling"
+                ohos:width="177vp"
+                ohos:height="50vp"
+                ohos:text="Auto Scrolling"
+                ohos:text_size="25fp"
+                ohos:text_alignment="vertical_center"
+                ohos:text_color="blue"
+                ohos:text_weight="700"
+                ohos:text_font="serif"
+                ohos:italic="true"
+                ohos:left_padding="10vp"
+                ohos:right_padding="10vp"
+                ohos:left_margin="20vp"
+                ohos:background_element="$graphic:gray_element"/>
+    </DirectionalLayout>
+
+    <DirectionalLayout
+            ohos:width="match_parent"
+            ohos:height="match_content"
+            ohos:orientation="horizontal"
+            ohos:top_margin="20vp">
+
+        <Button
+                ohos:width="match_content"
+                ohos:height="50vp"
+                ohos:text_size="25fp"
+                ohos:text="Icon Button"
+                ohos:element_left="$media:star"
+                ohos:element_padding="10vp"
+                ohos:left_padding="10vp"
+                ohos:right_padding="10vp"
+                ohos:background_element="$graphic:blue_button_element"/>
+
+        <Button
+                ohos:width="150vp"
+                ohos:height="50vp"
+                ohos:text_size="25fp"
+                ohos:text="Oval Button"
+                ohos:left_margin="20vp"
+                ohos:background_element="$graphic:blue_oval_button_element"/>
+
+        <Button
+                ohos:width="50vp"
+                ohos:height="50vp"
+                ohos:text_size="25fp"
+                ohos:text="+"
+                ohos:left_margin="20vp"
+                ohos:background_element="$graphic:blue_oval_button_element"/>
+
+        <Button
+                ohos:width="50vp"
+                ohos:height="50vp"
+                ohos:text_size="25fp"
+                ohos:text="7"
+                ohos:left_margin="20vp"
+                ohos:background_element="$graphic:green_ring_button_element"/>
+
+        <ToggleButton
+                ohos:width="80vp"
+                ohos:height="70vp"
+                ohos:text_size="25fp"
+                ohos:text_color_on="green"
+                ohos:text_color_off="red"
+                ohos:left_margin="20vp"
+                ohos:background_element="$graphic:gray_button_element"/>
+
+        <Image
+                ohos:id="$+id:image_components"
+                ohos:width="50vp"
+                ohos:height="50vp"
+                ohos:image_src="$media:icon"
+                ohos:left_margin="20vp"
+                ohos:layout_alignment="vertical_center"/>
+    </DirectionalLayout>
+
+    <DirectionalLayout
+            ohos:width="match_parent"
+            ohos:height="match_content"
+            ohos:orientation="horizontal"
+            ohos:top_margin="20vp">
+
+        <TextField
+                ohos:width="300vp"
+                ohos:height="50vp"
+                ohos:text_size="25fp"
+                ohos:text_alignment="vertical_center"
+                ohos:padding="10vp"
+                ohos:background_element="$graphic:black_border_element"/>
+
+        <Checkbox
+                ohos:id="$+id:check_box"
+                ohos:width="match_content"
+                ohos:height="50vp"
+                ohos:text="Checkbox"
+                ohos:text_size="25fp"
+                ohos:left_margin="20vp"/>
+
+        <RadioContainer
+                ohos:width="match_content"
+                ohos:height="match_content"
+                ohos:orientation="horizontal"
+                ohos:left_margin="20vp">
+
+            <RadioButton
+                    ohos:id="$+id:radio_button_1"
+                    ohos:width="match_content"
+                    ohos:height="50vp"
+                    ohos:text="Radio Button 1"
+                    ohos:text_size="25fp"/>
+
+            <RadioButton
+                    ohos:id="$+id:radio_button_2"
+                    ohos:width="match_content"
+                    ohos:height="50vp"
+                    ohos:text="Radio Button 2"
+                    ohos:text_size="25fp"
+                    ohos:left_margin="20vp"/>
+        </RadioContainer>
+    </DirectionalLayout>
+
+    <DirectionalLayout
+            ohos:width="match_parent"
+            ohos:height="match_content"
+            ohos:orientation="horizontal"
+            ohos:top_margin="20vp">
+
+        <Clock
+                ohos:width="match_content"
+                ohos:height="match_content"
+                ohos:text_size="25fp"
+                ohos:left_padding="10vp"
+                ohos:right_padding="10vp"
+                ohos:background_element="green"/>
+
+        <TickTimer
+                ohos:id="$+id:tick_timer"
+                ohos:width="match_content"
+                ohos:height="50vp"
+                ohos:text_size="25fp"
+                ohos:left_padding="10vp"
+                ohos:right_padding="10vp"
+                ohos:left_margin="20vp"
+                ohos:background_element="#607D8B"/>
+
+        <ProgressBar
+                ohos:width="200vp"
+                ohos:height="50vp"
+                ohos:max="100"
+                ohos:min="0"
+                ohos:progress="50"
+                ohos:progress_color="yellow"
+                ohos:progress_width="10vp"
+                ohos:left_margin="20vp"/>
+
+        <Slider
+                ohos:width="300vp"
+                ohos:height="50vp"
+                ohos:min="0"
+                ohos:max="100"
+                ohos:progress="50"
+                ohos:progress_width="5vp"
+                ohos:left_margin="20vp"/>
+    </DirectionalLayout>
+
+    <DependentLayout
+            ohos:width="match_parent"
+            ohos:height="160vp">
+
+        <DirectionalLayout
+                ohos:width="match_content"
+                ohos:height="match_content"
+                ohos:orientation="horizontal"
+                ohos:top_margin="20vp">
+
+            <DatePicker
+                    ohos:width="100vp"
+                    ohos:height="100vp"
+                    ohos:year_fixed="true"/>
+
+            <TimePicker
+                    ohos:width="100vp"
+                    ohos:height="100vp"
+                    ohos:left_margin="20vp"/>
+
+            <Picker
+                    ohos:width="80vp"
+                    ohos:height="100vp"
+                    ohos:min_value="10"
+                    ohos:max_value="50"
+                    ohos:value="25"
+                    ohos:left_margin="20vp"/>
+        </DirectionalLayout>
+
+        <Button
+                ohos:id="$+id:button_back"
+                ohos:width="150vp"
+                ohos:height="40vp"
+                ohos:text="$string:back"
+                ohos:text_size="20fp"
+                ohos:text_alignment="center"
+                ohos:background_element="$graphic:gray_button_element"
+                ohos:align_parent_bottom="true"
+                ohos:align_parent_right="true"/>
+    </DependentLayout>
+</DirectionalLayout>

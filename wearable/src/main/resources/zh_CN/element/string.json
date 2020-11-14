@@ -1,0 +1,28 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "英雄之旅"
+    },
+    {
+      "name": "mainability_description",
+      "value": "英雄之旅"
+    },
+    {
+      "name": "sleep",
+      "value": "睡眠"
+    },
+    {
+      "name": "hour",
+      "value": "小时"
+    },
+    {
+      "name": "minute",
+      "value": "分钟"
+    },
+    {
+      "name": "goal",
+      "value": "目标"
+    }
+  ]
+}

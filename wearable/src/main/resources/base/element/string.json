@@ -1,0 +1,28 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "Tour of Heroes"
+    },
+    {
+      "name": "mainability_description",
+      "value": "Tour of Heroes"
+    },
+    {
+      "name": "sleep",
+      "value": "Sleep"
+    },
+    {
+      "name": "hour",
+      "value": "Hours"
+    },
+    {
+      "name": "minute",
+      "value": "Minutes"
+    },
+    {
+      "name": "goal",
+      "value": "Goal"
+    }
+  ]
+}

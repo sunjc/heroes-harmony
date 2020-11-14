@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:ohos="http://schemas.huawei.com/res/ohos"
+             ohos:id="$+id:heroes"
+             ohos:column_count="3"
+             ohos:width="match_parent"
+             ohos:height="match_content">
+
+    <Text
+            ohos:width="40vp"
+            ohos:height="30vp"
+            ohos:text="$string:no"
+            ohos:text_size="20fp"
+            ohos:text_alignment="center"
+            ohos:background_element="$graphic:gray_column_element"/>
+
+    <Text
+            ohos:width="400vp"
+            ohos:height="30vp"
+            ohos:text="$string:name"
+            ohos:text_size="20fp"
+            ohos:text_alignment="center"
+            ohos:background_element="$graphic:gray_column_element"/>
+
+    <Text
+            ohos:width="80vp"
+            ohos:height="30vp"
+            ohos:text="$string:delete"
+            ohos:text_size="20fp"
+            ohos:text_alignment="center"
+            ohos:background_element="$graphic:gray_column_element"/>
+</TableLayout>

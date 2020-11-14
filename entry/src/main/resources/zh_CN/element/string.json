@@ -1,0 +1,72 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "英雄之旅"
+    },
+    {
+      "name": "mainability_description",
+      "value": "英雄之旅主页面"
+    },
+    {
+      "name": "componentsability_description",
+      "value": "HarmonyOS组件"
+    },
+    {
+      "name": "dashboard",
+      "value": "看板"
+    },
+    {
+      "name": "heroes",
+      "value": "英雄"
+    },
+    {
+      "name": "top_heroes",
+      "value": "英雄排行榜"
+    },
+    {
+      "name": "hero_search",
+      "value": "搜索英雄"
+    },
+    {
+      "name": "my_heroes",
+      "value": "我的英雄"
+    },
+    {
+      "name": "hero_name",
+      "value": "英雄名称"
+    },
+    {
+      "name": "add",
+      "value": "增加"
+    },
+    {
+      "name": "delete",
+      "value": "删除"
+    },
+    {
+      "name": "no",
+      "value": "序号"
+    },
+    {
+      "name": "name",
+      "value": "名字"
+    },
+    {
+      "name": "hero_details",
+      "value": "英雄详情"
+    },
+    {
+      "name": "id",
+      "value": "ID"
+    },
+    {
+      "name": "back",
+      "value": "返回"
+    },
+    {
+      "name": "save",
+      "value": "保存"
+    }
+  ]
+}
