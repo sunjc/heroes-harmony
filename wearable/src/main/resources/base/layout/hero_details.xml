@@ -1,118 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
 <DirectionalLayout
-        xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:background_element="#FF000000"
+    ohos:orientation="vertical">
+
+    <Text
+        ohos:id="$+id:detail_date"
+        ohos:height="25vp"
+        ohos:width="match_content"
+        ohos:layout_alignment="horizontal_center"
+        ohos:text_alignment="bottom"
+        ohos:text_color="white"
+        ohos:text_size="20vp"
+        ohos:text_weight="600"
+        ohos:top_margin="40vp"/>
+
+    <Text
+        ohos:height="20vp"
         ohos:width="match_parent"
-        ohos:height="match_parent"
-        ohos:background_element="#FF000000"
-        ohos:orientation="vertical">
+        ohos:alpha="0.66"
+        ohos:layout_alignment="horizontal_center"
+        ohos:text="$string:sleep"
+        ohos:text_alignment="center"
+        ohos:text_color="white"
+        ohos:text_size="16vp"/>
 
-    <Text
-            ohos:id="$+id:detail_date"
+    <DirectionalLayout
+        ohos:height="65vp"
+        ohos:width="match_content"
+        ohos:layout_alignment="horizontal_center"
+        ohos:orientation="horizontal"
+        ohos:top_margin="8vp">
+
+        <Text
+            ohos:id="$+id:sleep_hour_text"
+            ohos:height="match_content"
             ohos:width="match_content"
-            ohos:height="25vp"
-            ohos:top_margin="40vp"
-            ohos:layout_alignment="horizontal_center"
-            ohos:text_alignment="bottom"
-            ohos:text_color="white"
-            ohos:text_weight="600"
-            ohos:text_size="20vp"/>
-
-    <Text
-            ohos:width="match_parent"
-            ohos:height="20vp"
-            ohos:alpha="0.66"
-            ohos:layout_alignment="horizontal_center"
+            ohos:layout_alignment="center"
+            ohos:text="6"
             ohos:text_alignment="center"
-            ohos:text="$string:sleep"
+            ohos:text_color="white"
+            ohos:text_size="58vp"/>
+
+        <Text
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:alpha="0.66"
+            ohos:bottom_padding="10vp"
+            ohos:layout_alignment="bottom"
+            ohos:left_margin="2vp"
+            ohos:text="$string:hour"
             ohos:text_color="white"
             ohos:text_size="16vp"/>
 
-    <DirectionalLayout
+        <Text
+            ohos:id="$+id:sleep_minute_text"
+            ohos:height="match_content"
             ohos:width="match_content"
-            ohos:height="65vp"
-            ohos:top_margin="8vp"
-            ohos:layout_alignment="horizontal_center"
-            ohos:orientation="horizontal">
+            ohos:layout_alignment="center"
+            ohos:left_margin="2vp"
+            ohos:text="30"
+            ohos:text_alignment="center"
+            ohos:text_color="white"
+            ohos:text_size="58vp"/>
 
         <Text
-                ohos:id="$+id:sleep_hour_text"
-                ohos:width="match_content"
-                ohos:height="match_content"
-                ohos:layout_alignment="center"
-                ohos:text_alignment="center"
-                ohos:text="6"
-                ohos:text_color="white"
-                ohos:text_size="58vp"/>
-
-        <Text
-                ohos:width="match_content"
-                ohos:height="match_content"
-                ohos:left_margin="2vp"
-                ohos:alpha="0.66"
-                ohos:layout_alignment="bottom"
-                ohos:bottom_padding="10vp"
-                ohos:text="$string:hour"
-                ohos:text_color="white"
-                ohos:text_size="16vp"/>
-
-        <Text
-                ohos:id="$+id:sleep_minute_text"
-                ohos:width="match_content"
-                ohos:height="match_content"
-                ohos:left_margin="2vp"
-                ohos:layout_alignment="center"
-                ohos:text_alignment="center"
-                ohos:text="30"
-                ohos:text_color="white"
-                ohos:text_size="58vp"/>
-
-        <Text
-                ohos:width="match_content"
-                ohos:height="match_content"
-                ohos:left_margin="2vp"
-                ohos:alpha="0.66"
-                ohos:layout_alignment="bottom"
-                ohos:bottom_padding="10vp"
-                ohos:text="$string:minute"
-                ohos:text_color="white"
-                ohos:text_size="16vp"/>
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:alpha="0.66"
+            ohos:bottom_padding="10vp"
+            ohos:layout_alignment="bottom"
+            ohos:left_margin="2vp"
+            ohos:text="$string:minute"
+            ohos:text_color="white"
+            ohos:text_size="16vp"/>
     </DirectionalLayout>
 
     <DirectionalLayout
+        ohos:height="25vp"
+        ohos:width="match_content"
+        ohos:layout_alignment="horizontal_center"
+        ohos:orientation="horizontal"
+        ohos:top_margin="20vp">
+
+        <Text
+            ohos:height="20vp"
             ohos:width="match_content"
-            ohos:height="25vp"
-            ohos:top_margin="20vp"
-            ohos:layout_alignment="horizontal_center"
-            ohos:orientation="horizontal">
+            ohos:alpha="0.66"
+            ohos:bottom_margin="1vp"
+            ohos:text="$string:goal"
+            ohos:text_alignment="bottom"
+            ohos:text_color="white"
+            ohos:text_size="16vp"/>
 
         <Text
-                ohos:width="match_content"
-                ohos:height="20vp"
-                ohos:text="$string:goal"
-                ohos:alpha="0.66"
-                ohos:text_alignment="bottom"
-                ohos:bottom_margin="1vp"
-                ohos:text_color="white"
-                ohos:text_size="16vp"/>
+            ohos:id="$+id:sleep_goal_text"
+            ohos:height="match_parent"
+            ohos:width="match_content"
+            ohos:bottom_padding="2vp"
+            ohos:left_margin="2vp"
+            ohos:text="8"
+            ohos:text_color="white"
+            ohos:text_size="21vp"
+            ohos:text_weight="600"/>
 
         <Text
-                ohos:id="$+id:sleep_goal_text"
-                ohos:width="match_content"
-                ohos:height="match_parent"
-                ohos:left_margin="2vp"
-                ohos:text="8"
-                ohos:text_weight="600"
-                ohos:text_color="white"
-                ohos:bottom_padding="2vp"
-                ohos:text_size="21vp"/>
-
-        <Text
-                ohos:width="match_content"
-                ohos:height="20vp"
-                ohos:left_margin="2vp"
-                ohos:alpha="0.66"
-                ohos:text="$string:hour"
-                ohos:text_color="white"
-                ohos:text_size="16vp"/>
+            ohos:height="20vp"
+            ohos:width="match_content"
+            ohos:alpha="0.66"
+            ohos:left_margin="2vp"
+            ohos:text="$string:hour"
+            ohos:text_color="white"
+            ohos:text_size="16vp"/>
     </DirectionalLayout>
 </DirectionalLayout>

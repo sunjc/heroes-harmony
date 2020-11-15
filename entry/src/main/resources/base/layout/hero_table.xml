@@ -1,31 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:ohos="http://schemas.huawei.com/res/ohos"
-             ohos:id="$+id:heroes"
-             ohos:column_count="3"
-             ohos:width="match_parent"
-             ohos:height="match_content">
+<TableLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:id="$+id:heroes"
+    ohos:height="match_content"
+    ohos:width="match_parent"
+    ohos:column_count="3">
 
     <Text
-            ohos:width="40vp"
-            ohos:height="30vp"
-            ohos:text="$string:no"
-            ohos:text_size="20fp"
-            ohos:text_alignment="center"
-            ohos:background_element="$graphic:gray_column_element"/>
+        ohos:height="30vp"
+        ohos:width="40vp"
+        ohos:background_element="$graphic:gray_column_element"
+        ohos:text="$string:no"
+        ohos:text_alignment="center"
+        ohos:text_size="20fp"/>
 
     <Text
-            ohos:width="400vp"
-            ohos:height="30vp"
-            ohos:text="$string:name"
-            ohos:text_size="20fp"
-            ohos:text_alignment="center"
-            ohos:background_element="$graphic:gray_column_element"/>
+        ohos:height="30vp"
+        ohos:width="400vp"
+        ohos:background_element="$graphic:gray_column_element"
+        ohos:text="$string:name"
+        ohos:text_alignment="center"
+        ohos:text_size="20fp"/>
 
     <Text
-            ohos:width="80vp"
-            ohos:height="30vp"
-            ohos:text="$string:delete"
-            ohos:text_size="20fp"
-            ohos:text_alignment="center"
-            ohos:background_element="$graphic:gray_column_element"/>
+        ohos:height="30vp"
+        ohos:width="80vp"
+        ohos:background_element="$graphic:gray_column_element"
+        ohos:text="$string:delete"
+        ohos:text_alignment="center"
+        ohos:text_size="20fp"/>
 </TableLayout>

@@ -1,106 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
 <DirectionalLayout
-        xmlns:ohos="http://schemas.huawei.com/res/ohos"
-        ohos:width="match_content"
-        ohos:height="match_content"
-        ohos:orientation="vertical"
-        ohos:padding="20vp">
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_content"
+    ohos:width="match_content"
+    ohos:orientation="vertical"
+    ohos:padding="20vp">
 
     <DirectionalLayout
-            ohos:width="match_content"
-            ohos:height="match_content"
-            ohos:orientation="horizontal">
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:orientation="horizontal">
 
         <Button
-                ohos:id="$+id:button_dashboard"
-                ohos:width="150vp"
-                ohos:height="40vp"
-                ohos:text="$string:dashboard"
-                ohos:text_size="20fp"
-                ohos:text_alignment="center"
-                ohos:background_element="$graphic:gray_button_element"/>
+            ohos:id="$+id:button_dashboard"
+            ohos:height="40vp"
+            ohos:width="150vp"
+            ohos:background_element="$graphic:gray_button_element"
+            ohos:text="$string:dashboard"
+            ohos:text_alignment="center"
+            ohos:text_size="20fp"/>
 
         <Button
-                ohos:id="$+id:button_heroes"
-                ohos:width="150vp"
-                ohos:height="40vp"
-                ohos:left_margin="20vp"
-                ohos:text="$string:heroes"
-                ohos:text_size="20fp"
-                ohos:text_alignment="center"
-                ohos:background_element="$graphic:gray_button_element"/>
+            ohos:id="$+id:button_heroes"
+            ohos:height="40vp"
+            ohos:width="150vp"
+            ohos:background_element="$graphic:gray_button_element"
+            ohos:left_margin="20vp"
+            ohos:text="$string:heroes"
+            ohos:text_alignment="center"
+            ohos:text_size="20fp"/>
     </DirectionalLayout>
 
     <Text
-            ohos:width="match_content"
-            ohos:height="match_content"
-            ohos:text="$string:hero_details"
-            ohos:text_size="25fp"
-            ohos:top_margin="20vp"
-            ohos:bottom_margin="20vp"/>
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:bottom_margin="20vp"
+        ohos:text="$string:hero_details"
+        ohos:text_size="25fp"
+        ohos:top_margin="20vp"/>
 
     <DirectionalLayout
-            ohos:width="match_content"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:orientation="horizontal">
+
+        <Text
             ohos:height="match_content"
-            ohos:orientation="horizontal">
+            ohos:width="70vp"
+            ohos:text="$string:id"
+            ohos:text_size="20fp"/>
 
         <Text
-                ohos:width="70vp"
-                ohos:height="match_content"
-                ohos:text="$string:id"
-                ohos:text_size="20fp"/>
-
-        <Text
-                ohos:id="$+id:hero_id"
-                ohos:width="match_content"
-                ohos:height="40vp"
-                ohos:text_size="20fp"
-                ohos:padding="4vp"/>
+            ohos:id="$+id:hero_id"
+            ohos:height="40vp"
+            ohos:width="match_content"
+            ohos:padding="4vp"
+            ohos:text_size="20fp"/>
     </DirectionalLayout>
 
     <DirectionalLayout
-            ohos:width="match_content"
-            ohos:height="match_content"
-            ohos:orientation="horizontal">
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:orientation="horizontal">
 
         <Text
-                ohos:width="70vp"
-                ohos:height="match_content"
-                ohos:text="$string:name"
-                ohos:text_size="20fp"/>
+            ohos:height="match_content"
+            ohos:width="70vp"
+            ohos:text="$string:name"
+            ohos:text_size="20fp"/>
 
         <TextField
-                ohos:id="$+id:hero_name"
-                ohos:width="300vp"
-                ohos:height="40vp"
-                ohos:text_size="20fp"
-                ohos:padding="4vp"
-                ohos:background_element="$graphic:black_border_element"/>
+            ohos:id="$+id:hero_name"
+            ohos:height="40vp"
+            ohos:width="300vp"
+            ohos:background_element="$graphic:black_border_element"
+            ohos:padding="4vp"
+            ohos:text_size="20fp"/>
     </DirectionalLayout>
 
     <DirectionalLayout
-            ohos:width="match_content"
-            ohos:height="match_content"
-            ohos:orientation="horizontal"
-            ohos:padding="10vp">
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:orientation="horizontal"
+        ohos:padding="10vp">
 
         <Button
-                ohos:id="$+id:button_back"
-                ohos:width="150vp"
-                ohos:height="40vp"
-                ohos:text="$string:back"
-                ohos:text_size="20fp"
-                ohos:text_alignment="center"
-                ohos:background_element="$graphic:gray_button_element"/>
+            ohos:id="$+id:button_back"
+            ohos:height="40vp"
+            ohos:width="150vp"
+            ohos:background_element="$graphic:gray_button_element"
+            ohos:text="$string:back"
+            ohos:text_alignment="center"
+            ohos:text_size="20fp"/>
 
         <Button
-                ohos:id="$+id:button_save"
-                ohos:width="150vp"
-                ohos:height="40vp"
-                ohos:left_margin="20vp"
-                ohos:text="$string:save"
-                ohos:text_size="20fp"
-                ohos:text_alignment="center"
-                ohos:background_element="$graphic:gray_button_element"/>
+            ohos:id="$+id:button_save"
+            ohos:height="40vp"
+            ohos:width="150vp"
+            ohos:background_element="$graphic:gray_button_element"
+            ohos:left_margin="20vp"
+            ohos:text="$string:save"
+            ohos:text_alignment="center"
+            ohos:text_size="20fp"/>
     </DirectionalLayout>
 </DirectionalLayout>

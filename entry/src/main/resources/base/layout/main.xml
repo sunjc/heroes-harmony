@@ -1,85 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
 <DirectionalLayout
-        xmlns:ohos="http://schemas.huawei.com/res/ohos"
-        ohos:width="match_parent"
-        ohos:height="match_content"
-        ohos:orientation="vertical"
-        ohos:padding="20vp">
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_content"
+    ohos:width="match_parent"
+    ohos:orientation="vertical"
+    ohos:padding="20vp">
 
     <DirectionalLayout
-            ohos:width="match_content"
-            ohos:height="match_content"
-            ohos:orientation="horizontal">
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:orientation="horizontal">
 
         <Button
-                ohos:width="150vp"
-                ohos:height="40vp"
-                ohos:text="$string:dashboard"
-                ohos:text_size="20fp"
-                ohos:text_alignment="center"
-                ohos:background_element="$graphic:gray_button_element"/>
+            ohos:height="40vp"
+            ohos:width="150vp"
+            ohos:background_element="$graphic:gray_button_element"
+            ohos:text="$string:dashboard"
+            ohos:text_alignment="center"
+            ohos:text_size="20fp"/>
 
         <Button
-                ohos:id="$+id:button_heroes"
-                ohos:width="150vp"
-                ohos:height="40vp"
-                ohos:left_margin="20vp"
-                ohos:text="$string:heroes"
-                ohos:text_size="20fp"
-                ohos:text_alignment="center"
-                ohos:background_element="$graphic:gray_button_element"/>
+            ohos:id="$+id:button_heroes"
+            ohos:height="40vp"
+            ohos:width="150vp"
+            ohos:background_element="$graphic:gray_button_element"
+            ohos:left_margin="20vp"
+            ohos:text="$string:heroes"
+            ohos:text_alignment="center"
+            ohos:text_size="20fp"/>
     </DirectionalLayout>
 
     <Text
-            ohos:width="match_content"
-            ohos:height="match_content"
-            ohos:layout_alignment="horizontal_center"
-            ohos:text="$string:top_heroes"
-            ohos:text_size="25fp"
-            ohos:top_margin="20vp"
-            ohos:bottom_margin="20vp"/>
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:bottom_margin="20vp"
+        ohos:layout_alignment="horizontal_center"
+        ohos:text="$string:top_heroes"
+        ohos:text_size="25fp"
+        ohos:top_margin="20vp"/>
 
     <TableLayout
-            ohos:id="$+id:top_heroes"
-            ohos:column_count="4"
-            ohos:width="match_parent"
-            ohos:height="match_content"
-            ohos:layout_alignment="center">
+        ohos:id="$+id:top_heroes"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:column_count="4"
+        ohos:layout_alignment="center">
     </TableLayout>
 
     <Text
-            ohos:width="match_content"
-            ohos:height="match_content"
-            ohos:layout_alignment="left"
-            ohos:text="$string:hero_search"
-            ohos:text_size="20fp"
-            ohos:top_margin="20vp"
-            ohos:bottom_margin="20vp"/>
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:bottom_margin="20vp"
+        ohos:layout_alignment="left"
+        ohos:text="$string:hero_search"
+        ohos:text_size="20fp"
+        ohos:top_margin="20vp"/>
 
     <TextField
-            ohos:id="$+id:search"
-            ohos:width="300vp"
-            ohos:height="40vp"
-            ohos:text_size="20fp"
-            ohos:text_alignment="vertical_center"
-            ohos:padding="4vp"
-            ohos:background_element="$graphic:black_border_element"/>
+        ohos:id="$+id:search"
+        ohos:height="40vp"
+        ohos:width="300vp"
+        ohos:background_element="$graphic:black_border_element"
+        ohos:padding="4vp"
+        ohos:text_alignment="vertical_center"
+        ohos:text_size="20fp"/>
 
     <DependentLayout
-            ohos:width="match_parent"
-            ohos:height="180vp">
+        ohos:height="180vp"
+        ohos:width="match_parent">
 
         <ListContainer
-                ohos:id="$+id:search_list"
-                ohos:width="300vp"
-                ohos:height="180vp"/>
+            ohos:id="$+id:search_list"
+            ohos:height="180vp"
+            ohos:width="300vp"/>
 
         <Image
-                ohos:id="$+id:image_components"
-                ohos:width="40vp"
-                ohos:height="40vp"
-                ohos:image_src="$media:icon"
-                ohos:align_parent_bottom="true"
-                ohos:align_parent_right="true"/>
+            ohos:id="$+id:image_components"
+            ohos:height="40vp"
+            ohos:width="40vp"
+            ohos:align_parent_bottom="true"
+            ohos:align_parent_right="true"
+            ohos:image_src="$media:icon"/>
     </DependentLayout>
 </DirectionalLayout>
