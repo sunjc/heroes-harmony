@@ -15,20 +15,12 @@ public class ComponentsAbilitySlice extends AbilitySlice {
 
         // 自动调整字体
         Text autoFontText = (Text) findComponentById(ResourceTable.Id_text_auto_font);
-        autoFontText.setAutoFontSize(true);
         autoFontText.setAutoFontSizeRule(30, 100, 1);
-        autoFontText.setTruncationMode(Text.TruncationMode.ELLIPSIS_AT_END);
         autoFontText.setClickedListener(component -> autoFontText.setText(autoFontText.getText() + "!"));
 
-        // 跑马灯效果
+        // 启动跑马灯效果
         Text autoScrollingText = (Text) findComponentById(ResourceTable.Id_text_auto_scrolling);
-        autoScrollingText.setTruncationMode(Text.TruncationMode.AUTO_SCROLLING);
-        // autoScrollingText.setAutoScrollingCount(Text.AUTO_SCROLLING_FOREVER);
         autoScrollingText.startAutoScrolling();
-
-        // 缩放Image
-        Image componentsImg = (Image) findComponentById(ResourceTable.Id_image_components);
-        componentsImg.setScaleMode(Image.ScaleMode.INSIDE);
 
         // 复选框
         Checkbox checkbox = (Checkbox) findComponentById(ResourceTable.Id_check_box);
@@ -52,9 +44,9 @@ public class ComponentsAbilitySlice extends AbilitySlice {
             isRunning = !isRunning;
         });
 
-        // 后退
-        Button backBtn = (Button) findComponentById(ResourceTable.Id_button_back);
-        backBtn.setClickedListener(component -> terminateAbility());
+        // Hero Button
+        Button heroBtn = (Button) findComponentById(ResourceTable.Id_button_hero);
+        heroBtn.setClickedListener(component -> terminateAbility());
     }
 
     @Override

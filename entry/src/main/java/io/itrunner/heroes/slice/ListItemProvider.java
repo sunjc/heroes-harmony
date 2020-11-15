@@ -22,6 +22,11 @@ public class ListItemProvider extends BaseItemProvider {
     }
 
     @Override
+    public Object getItem(int i) {
+        return this.data.get(i);
+    }
+
+    @Override
     public long getItemId(int position) {
         return data.get(position).getId();
     }
