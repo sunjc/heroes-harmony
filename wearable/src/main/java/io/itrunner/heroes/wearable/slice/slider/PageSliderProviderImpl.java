@@ -21,6 +21,7 @@ public class PageSliderProviderImpl extends PageSliderProvider {
         components.add(component);
     }
 
+    @Override
     public int getCount() {
         return components.size();
     }

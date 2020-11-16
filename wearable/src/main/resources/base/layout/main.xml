@@ -7,5 +7,6 @@
     <PageSlider
         ohos:id="$+id:page_slider"
         ohos:height="match_parent"
-        ohos:width="match_parent"/>
+        ohos:width="match_parent"
+        ohos:orientation="horizontal"/>
 </DirectionalLayout>
