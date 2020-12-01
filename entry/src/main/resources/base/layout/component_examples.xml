@@ -245,8 +245,8 @@
 
         <Button
             ohos:id="$+id:button_hero"
-            ohos:height="50vp"
-            ohos:width="150vp"
+            ohos:height="40vp"
+            ohos:width="40vp"
             ohos:align_parent_bottom="true"
             ohos:align_parent_right="true"
             ohos:background_element="$media:hero"/>
