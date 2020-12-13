@@ -1,9 +1,9 @@
 package io.itrunner.heroes.wearable.slice;
 
 import io.itrunner.heroes.wearable.ResourceTable;
-import io.itrunner.heroes.wearable.slice.slider.HeroDetailsComponent;
 import io.itrunner.heroes.wearable.slice.slider.HeroesComponent;
 import io.itrunner.heroes.wearable.slice.slider.PageSliderProviderImpl;
+import io.itrunner.heroes.wearable.slice.slider.SleepComponent;
 import ohos.aafwk.ability.AbilitySlice;
 import ohos.aafwk.content.Intent;
 import ohos.agp.components.PageSlider;
@@ -40,7 +40,7 @@ public class MainAbilitySlice extends AbilitySlice {
     private void addComponents() {
         PageSliderProviderImpl provider = new PageSliderProviderImpl();
         provider.addComponent(new HeroesComponent(this));
-        provider.addComponent(new HeroDetailsComponent(this));
+        provider.addComponent(new SleepComponent(this));
 
         PageSlider slider = (PageSlider) findComponentById(ResourceTable.Id_page_slider);
         slider.setProvider(provider);

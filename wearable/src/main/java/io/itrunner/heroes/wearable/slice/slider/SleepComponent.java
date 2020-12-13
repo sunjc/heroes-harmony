@@ -6,20 +6,11 @@ import ohos.agp.components.LayoutScatter;
 import ohos.agp.components.Text;
 import ohos.app.AbilityContext;
 
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-import java.time.format.FormatStyle;
-
-public class HeroDetailsComponent implements ComponentOwner {
-    private static final DateTimeFormatter DATE_FORMATTER = DateTimeFormatter.ofLocalizedDate(FormatStyle.LONG);
-
-    private AbilityContext context;
-
+public class SleepComponent implements ComponentOwner {
     private Component root;
 
-    public HeroDetailsComponent(AbilityContext context) {
-        this.context = context;
-        this.root = LayoutScatter.getInstance(context).parse(ResourceTable.Layout_hero_details, null, false);
+    public SleepComponent(AbilityContext context) {
+        this.root = LayoutScatter.getInstance(context).parse(ResourceTable.Layout_sleep, null, false);
     }
 
     @Override
@@ -29,9 +20,6 @@ public class HeroDetailsComponent implements ComponentOwner {
 
     @Override
     public void init() {
-        Text date = (Text) root.findComponentById(ResourceTable.Id_detail_date);
-        date.setText(LocalDate.now().format(DATE_FORMATTER));
-
         Text hour = (Text) root.findComponentById(ResourceTable.Id_sleep_hour_text);
         hour.setText("6");
 

@@ -6,16 +6,12 @@
     ohos:background_element="#FF000000"
     ohos:orientation="vertical">
 
-    <Text
-        ohos:id="$+id:detail_date"
-        ohos:height="25vp"
-        ohos:width="match_content"
-        ohos:layout_alignment="horizontal_center"
-        ohos:text_alignment="bottom"
-        ohos:text_color="white"
-        ohos:text_size="20vp"
-        ohos:text_weight="600"
-        ohos:top_margin="40vp"/>
+    <Image
+        ohos:height="32vp"
+        ohos:width="32vp"
+        ohos:top_margin="30vp"
+        ohos:image_src="$media:sleep"
+        ohos:layout_alignment="horizontal_center"/>
 
     <Text
         ohos:height="20vp"
@@ -28,7 +24,7 @@
         ohos:text_size="16vp"/>
 
     <DirectionalLayout
-        ohos:height="65vp"
+        ohos:height="70vp"
         ohos:width="match_content"
         ohos:layout_alignment="horizontal_center"
         ohos:orientation="horizontal"
