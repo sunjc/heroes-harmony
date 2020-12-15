@@ -6,6 +6,13 @@
     ohos:orientation="vertical"
     ohos:padding="20vp">
 
+    <Text
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:bottom_margin="20vp"
+        ohos:text="$string:componentsability_description"
+        ohos:text_size="25fp"/>
+
     <DirectionalLayout
         ohos:height="match_content"
         ohos:width="match_parent"

@@ -6,29 +6,10 @@
     ohos:orientation="vertical"
     ohos:padding="20vp">
 
-    <DirectionalLayout
+    <include
         ohos:height="match_content"
         ohos:width="match_content"
-        ohos:orientation="horizontal">
-
-        <Button
-            ohos:height="40vp"
-            ohos:width="150vp"
-            ohos:background_element="$graphic:gray_button_element"
-            ohos:text="$string:dashboard"
-            ohos:text_alignment="center"
-            ohos:text_size="20fp"/>
-
-        <Button
-            ohos:id="$+id:button_heroes"
-            ohos:height="40vp"
-            ohos:width="150vp"
-            ohos:background_element="$graphic:gray_button_element"
-            ohos:left_margin="20vp"
-            ohos:text="$string:heroes"
-            ohos:text_alignment="center"
-            ohos:text_size="20fp"/>
-    </DirectionalLayout>
+        ohos:layout="$layout:navigation"/>
 
     <Text
         ohos:height="match_content"
