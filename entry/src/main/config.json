@@ -26,6 +26,15 @@
       "moduleName": "entry",
       "moduleType": "entry"
     },
+    "metaData": {
+      "customizeData": [
+        {
+          "name": "hwc-theme",
+          "value": "androidhwext:style/Theme.Emui.NoTitleBar",
+          "extra": ""
+        }
+      ]
+    },
     "abilities": [
       {
         "skills": [
