@@ -8,6 +8,7 @@ import ohos.aafwk.content.Intent;
 import ohos.agp.components.*;
 import ohos.agp.components.TableLayout.LayoutConfig;
 import ohos.agp.components.element.ShapeElement;
+import ohos.agp.utils.TextAlignment;
 import ohos.hiviewdfx.HiLog;
 import ohos.hiviewdfx.HiLogLabel;
 
@@ -112,7 +113,7 @@ public class HeroesAbilitySlice extends AbilitySlice {
             Button heroNameBtn = new Button(this);
             heroNameBtn.setText(hero.getName());
             heroNameBtn.setTextSize(30);
-            heroNameBtn.setTextAlignment(1);
+            heroNameBtn.setTextAlignment(TextAlignment.CENTER);
             heroNameBtn.setWidth(800);
             heroNameBtn.setHeight(58);
             heroNameBtn.setPadding(4, 4, 4, 4);

@@ -7,17 +7,15 @@
       "name": "1.0"
     },
     "apiVersion": {
-      "compatible": 3,
-      "target": 3
+      "compatible": 4,
+      "target": 4,
+      "releaseType": "Beta1"
     }
   },
   "deviceConfig": {},
   "module": {
     "package": "io.itrunner.heroes",
-    "name": ".Heroes",
-    "reqCapabilities": [
-      "video_support"
-    ],
+    "name": ".HeroesApplication",
     "deviceType": [
       "tv"
     ],
@@ -48,7 +46,6 @@
           }
         ],
         "orientation": "landscape",
-        "formEnabled": false,
         "name": "io.itrunner.heroes.MainAbility",
         "icon": "$media:hero",
         "description": "$string:mainability_description",
@@ -65,7 +62,6 @@
           }
         ],
         "orientation": "landscape",
-        "formEnabled": false,
         "name": "io.itrunner.heroes.ComponentsAbility",
         "icon": "$media:icon",
         "description": "$string:componentsability_description",

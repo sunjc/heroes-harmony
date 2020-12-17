@@ -7,17 +7,15 @@
       "name": "1.0"
     },
     "apiVersion": {
-      "compatible": 3,
-      "target": 3
+      "compatible": 4,
+      "target": 4,
+      "releaseType": "Beta1"
     }
   },
   "deviceConfig": {},
   "module": {
     "package": "io.itrunner.heroes.wearable",
-    "name": ".Wearable",
-    "reqCapabilities": [
-      "video_support"
-    ],
+    "name": ".WearableApplication",
     "reqPermissions": [
       {
         "name": "ohos.permission.READ_HEALTH_DATA",
@@ -51,7 +49,6 @@
           }
         ],
         "orientation": "landscape",
-        "formEnabled": false,
         "name": "io.itrunner.heroes.wearable.MainAbility",
         "icon": "$media:hero",
         "description": "$string:mainability_description",

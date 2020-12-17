@@ -9,8 +9,8 @@ import ohos.hiviewdfx.HiLog;
 import ohos.hiviewdfx.HiLogLabel;
 
 public class DBUtils {
-    public static final String DATABASE_NAME = "HeroStore.db";
-    public static final String DATABASE_NAME_ALIAS = "HeroStore";
+    private static final String DATABASE_NAME = "HeroStore.db";
+    private static final String DATABASE_NAME_ALIAS = "HeroStore";
 
     private static final HiLogLabel LOG_LABEL = new HiLogLabel(HiLog.LOG_APP, 0x00101, "Hero Database");
 

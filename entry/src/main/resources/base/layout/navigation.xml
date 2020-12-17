@@ -13,7 +13,6 @@
         ohos:text_size="25fp"/>
 
     <DirectionalLayout
-        xmlns:ohos="http://schemas.huawei.com/res/ohos"
         ohos:height="match_content"
         ohos:width="match_content"
         ohos:orientation="horizontal">
