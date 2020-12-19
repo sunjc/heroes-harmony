@@ -1,0 +1,13 @@
+{
+  "intarray": [
+    {
+      "name": "page_size_options",
+      "value": [
+        5,
+        10,
+        20,
+        50
+      ]
+    }
+  ]
+}

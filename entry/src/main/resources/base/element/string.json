@@ -13,6 +13,13 @@
       "value": "HarmonyOS Components"
     },
     {
+      "name": "components_title",
+      "value": [
+        "Travel dream A thousand miles Meeting in HarmonyOS"
+      ],
+      "comment": "the title of the components page"
+    },
+    {
       "name": "dashboard",
       "value": "Dashboard"
     },

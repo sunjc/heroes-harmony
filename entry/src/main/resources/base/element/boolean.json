@@ -1,0 +1,8 @@
+{
+  "boolean": [
+    {
+      "name": "show_title_bar",
+      "value": true
+    }
+  ]
+}
