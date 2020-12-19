@@ -10,7 +10,7 @@
         ohos:height="match_content"
         ohos:width="match_content"
         ohos:bottom_margin="20vp"
-        ohos:text="$string:componentsability_description"
+        ohos:text="$string:components_title"
         ohos:text_size="25fp"/>
 
     <DirectionalLayout
@@ -243,9 +243,24 @@
             ohos:orientation="horizontal"
             ohos:top_margin="20vp">
 
+            <Component
+                ohos:id="$+id:animation_pandas"
+                ohos:height="121vp"
+                ohos:width="108vp"/>
+
+            <RoundProgressBar
+                ohos:id="$+id:round_progress_bar"
+                ohos:height="100vp"
+                ohos:width="100vp"
+                ohos:left_margin="20vp"
+                ohos:progress="20"
+                ohos:progress_color="#47CC47"
+                ohos:progress_width="10vp"/>
+
             <DatePicker
                 ohos:height="100vp"
                 ohos:width="100vp"
+                ohos:left_margin="20vp"
                 ohos:year_fixed="true"/>
 
             <TimePicker
@@ -260,15 +275,6 @@
                 ohos:max_value="50"
                 ohos:min_value="10"
                 ohos:value="25"/>
-
-            <RoundProgressBar
-                ohos:id="$+id:round_progress_bar"
-                ohos:height="100vp"
-                ohos:width="100vp"
-                ohos:left_margin="20vp"
-                ohos:progress="20"
-                ohos:progress_color="#47CC47"
-                ohos:progress_width="10vp"/>
         </DirectionalLayout>
 
         <Button

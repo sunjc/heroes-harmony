@@ -6,6 +6,7 @@ import ohos.aafwk.content.Intent;
 import ohos.agp.colors.RgbColor;
 import ohos.agp.colors.RgbPalette;
 import ohos.agp.components.*;
+import ohos.agp.components.element.FrameAnimationElement;
 import ohos.agp.components.element.ShapeElement;
 import ohos.agp.components.element.StateElement;
 
@@ -118,6 +119,12 @@ public class ComponentsAbilitySlice extends AbilitySlice {
 
             isRunning = !isRunning;
         });
+
+        // 添加动画
+        FrameAnimationElement frameAnimationElement = new FrameAnimationElement(this, ResourceTable.Graphic_animation_pandas);
+        Component animation = findComponentById(ResourceTable.Id_animation_pandas);
+        animation.setBackground(frameAnimationElement);
+        frameAnimationElement.start();
 
         // Hero Button
         Button heroBtn = (Button) findComponentById(ResourceTable.Id_button_hero);

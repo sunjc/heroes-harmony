@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:ohos="http://schemas.huawei.com/res/ohos" ohos:oneshot="false">
+    <item ohos:duration="1000" ohos:element="$media:panda01"/>
+    <item ohos:duration="1000" ohos:element="$media:panda02"/>
+    <item ohos:duration="1000" ohos:element="$media:panda03"/>
+    <item ohos:duration="1000" ohos:element="$media:panda04"/>
+    <item ohos:duration="1000" ohos:element="$media:panda05"/>
+</animation-list>
