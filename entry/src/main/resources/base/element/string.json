@@ -14,9 +14,7 @@
     },
     {
       "name": "components_title",
-      "value": [
-        "Travel dream A thousand miles Meeting in HarmonyOS"
-      ],
+      "value": "Travel dream A thousand miles Meeting in HarmonyOS",
       "comment": "the title of the components page"
     },
     {
