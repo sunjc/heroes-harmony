@@ -11,7 +11,6 @@ import ohos.agp.components.ComponentContainer.LayoutConfig;
 import ohos.agp.components.element.ShapeElement;
 import ohos.hiviewdfx.HiLog;
 import ohos.hiviewdfx.HiLogLabel;
-import ohos.multimodalinput.event.KeyEvent;
 
 import java.util.List;
 
@@ -80,8 +79,8 @@ public class MainAbilitySlice extends AbilitySlice {
 
     private void bindSearchListener() {
         searchText = (TextField) findComponentById(ResourceTable.Id_search);
-        searchText.setKeyEventListener((component, keyEvent) -> {
-            if (keyEvent.isKeyDown() && keyEvent.getKeyCode() == KeyEvent.KEY_ENTER && !searchText.getText().isEmpty()) {
+        searchText.setEditorActionListener(action -> {
+            if (action == 3) {
                 fillSearchList(searchText.getText());
                 return true;
             }

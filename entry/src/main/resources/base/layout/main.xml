@@ -42,6 +42,7 @@
         ohos:height="40vp"
         ohos:width="330vp"
         ohos:background_element="$graphic:black_border_element"
+        ohos:input_enter_key_type="enter_key_type_search"
         ohos:padding="4vp"
         ohos:text_alignment="vertical_center"
         ohos:text_size="20fp"/>
