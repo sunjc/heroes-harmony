@@ -234,7 +234,7 @@
     </DirectionalLayout>
 
     <DependentLayout
-        ohos:height="160vp"
+        ohos:height="175vp"
         ohos:width="match_parent">
 
         <DirectionalLayout
@@ -283,6 +283,15 @@
             ohos:width="40vp"
             ohos:align_parent_bottom="true"
             ohos:align_parent_right="true"
-            ohos:background_element="$media:hero"/>
+            ohos:background_element="$media:hero"
+            ohos:bottom_margin="30vp"/>
+
+        <Text
+            ohos:id="$+id:device_name"
+            ohos:height="30vp"
+            ohos:width="50vp"
+            ohos:align_parent_bottom="true"
+            ohos:align_parent_right="true"
+            ohos:text_size="12fp"/>
     </DependentLayout>
 </DirectionalLayout>

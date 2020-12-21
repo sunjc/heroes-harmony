@@ -2,6 +2,7 @@ package io.itrunner.heroes.slice;
 
 import io.itrunner.heroes.ResourceTable;
 import ohos.aafwk.ability.AbilitySlice;
+import ohos.aafwk.ability.DataAbilityHelper;
 import ohos.aafwk.content.Intent;
 import ohos.agp.colors.RgbColor;
 import ohos.agp.colors.RgbPalette;
@@ -9,6 +10,7 @@ import ohos.agp.components.*;
 import ohos.agp.components.element.FrameAnimationElement;
 import ohos.agp.components.element.ShapeElement;
 import ohos.agp.components.element.StateElement;
+import ohos.sysappcomponents.settings.SystemSettings;
 
 public class ComponentsAbilitySlice extends AbilitySlice {
     private boolean isRunning = false;
@@ -75,6 +77,7 @@ public class ComponentsAbilitySlice extends AbilitySlice {
         Switch btnSwitch = (Switch) findComponentById(ResourceTable.Id_btn_switch);
         btnSwitch.setTrackElement(stateElement(elementTrackOn, elementTrackOff));
         btnSwitch.setThumbElement(stateElement(elementThumbOn, elementThumbOff));
+        btnSwitch.setChecked(true);
 
         // 设置复选框样式
         // 选中样式
@@ -104,7 +107,7 @@ public class ComponentsAbilitySlice extends AbilitySlice {
         RadioButton radioButton2 = (RadioButton) findComponentById(ResourceTable.Id_radio_button_2);
         radioButton1.setButtonElement(stateElement(radioOn, radioOff));
         radioButton2.setButtonElement(stateElement(radioOn, radioOff));
-        radioButton1.setChecked(true);
+        radioButton2.setChecked(true);
 
         // 启停计时器
         TickTimer tickTimer = (TickTimer) findComponentById(ResourceTable.Id_tick_timer);
@@ -129,6 +132,12 @@ public class ComponentsAbilitySlice extends AbilitySlice {
         // Hero Button
         Button heroBtn = (Button) findComponentById(ResourceTable.Id_button_hero);
         heroBtn.setClickedListener(component -> terminateAbility());
+
+        // 攻取设备名称
+        DataAbilityHelper dataAbilityHelper = DataAbilityHelper.creator(this);
+        String deviceName = SystemSettings.getValue(dataAbilityHelper, SystemSettings.General.DEVICE_NAME);
+        Text deviceNameText = (Text) findComponentById(ResourceTable.Id_device_name);
+        deviceNameText.setText(deviceName);
     }
 
     @Override
