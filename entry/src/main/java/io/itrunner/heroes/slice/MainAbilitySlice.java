@@ -75,17 +75,7 @@ public class MainAbilitySlice extends AbilitySlice {
 
         // to components page
         Image componentsImg = (Image) findComponentById(ResourceTable.Id_image_components);
-        componentsImg.setScaleMode(Image.ScaleMode.INSIDE);
-        componentsImg.setClickedListener(component -> {
-            Intent intent = new Intent();
-            Operation operation = new Intent.OperationBuilder()
-                    .withAction(ACTION_COMPONENTS)
-                    .build();
-            intent.setOperation(operation);
-
-            startAbility(intent);
-        });
-
+        componentsImg.setClickedListener(component -> gotoPage(ACTION_COMPONENTS));
     }
 
     private void bindSearchListener() {
@@ -136,6 +126,16 @@ public class MainAbilitySlice extends AbilitySlice {
         Intent intent = new Intent();
         intent.setParam("id", id);
         present(new HeroDetailsAbilitySlice(), intent);
+    }
+
+    private void gotoPage(String action) {
+        Intent intent = new Intent();
+        Operation operation = new Intent.OperationBuilder()
+                .withAction(action)
+                .build();
+        intent.setOperation(operation);
+
+        startAbility(intent);
     }
 
     private void clear() {

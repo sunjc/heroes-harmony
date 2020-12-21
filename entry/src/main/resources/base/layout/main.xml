@@ -40,14 +40,14 @@
     <TextField
         ohos:id="$+id:search"
         ohos:height="40vp"
-        ohos:width="300vp"
+        ohos:width="330vp"
         ohos:background_element="$graphic:black_border_element"
         ohos:padding="4vp"
         ohos:text_alignment="vertical_center"
         ohos:text_size="20fp"/>
 
     <DependentLayout
-        ohos:height="180vp"
+        ohos:height="175vp"
         ohos:width="match_parent">
 
         <ListContainer
@@ -61,6 +61,7 @@
             ohos:width="40vp"
             ohos:align_parent_bottom="true"
             ohos:align_parent_right="true"
-            ohos:image_src="$media:icon"/>
+            ohos:image_src="$media:icon"
+            ohos:scale_mode="inside"/>
     </DependentLayout>
 </DirectionalLayout>
