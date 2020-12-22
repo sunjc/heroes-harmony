@@ -7,9 +7,7 @@ import ohos.aafwk.content.Intent;
 import ohos.agp.colors.RgbColor;
 import ohos.agp.colors.RgbPalette;
 import ohos.agp.components.*;
-import ohos.agp.components.element.FrameAnimationElement;
-import ohos.agp.components.element.ShapeElement;
-import ohos.agp.components.element.StateElement;
+import ohos.agp.components.element.*;
 import ohos.sysappcomponents.settings.SystemSettings;
 
 public class ComponentsAbilitySlice extends AbilitySlice {
@@ -32,19 +30,11 @@ public class ComponentsAbilitySlice extends AbilitySlice {
 
         // 设置Rating样式
         // 全填充样式
-        ShapeElement filledElement = new ShapeElement();
-        filledElement.setShape(ShapeElement.OVAL);
-        filledElement.setShaderType(ShapeElement.RADIAL_GRADIENT_SHADER_TYPE);
-        filledElement.setRgbColors(new RgbColor[]{RgbPalette.YELLOW, RgbPalette.RED});
+        VectorElement filledElement = new VectorElement(this, ResourceTable.Graphic_star_full);
         // 半填充样式
-        ShapeElement halfFilledElement = new ShapeElement();
-        halfFilledElement.setShape(ShapeElement.OVAL);
-        halfFilledElement.setShaderType(ShapeElement.RADIAL_GRADIENT_SHADER_TYPE);
-        halfFilledElement.setRgbColors(new RgbColor[]{RgbPalette.MAGENTA, RgbPalette.RED});
+        VectorElement halfFilledElement = new VectorElement(this, ResourceTable.Graphic_star_half);
         // 未填充样式
-        ShapeElement unfilledElement = new ShapeElement();
-        unfilledElement.setShape(ShapeElement.OVAL);
-        unfilledElement.setRgbColor(RgbPalette.GRAY);
+        VectorElement unfilledElement = new VectorElement(this, ResourceTable.Graphic_star_gray);
         // 设置样式
         Rating rating = (Rating) findComponentById(ResourceTable.Id_rating);
         rating.setFilledElement(filledElement);
@@ -52,6 +42,7 @@ public class ComponentsAbilitySlice extends AbilitySlice {
         rating.setUnfilledElement(unfilledElement);
         // 设置步长
         rating.setGrainSize(0.5f);
+        // 设置星级
         rating.setScore(3.5f);
 
         // 设置Switch的样式
@@ -81,13 +72,9 @@ public class ComponentsAbilitySlice extends AbilitySlice {
 
         // 设置复选框样式
         // 选中样式
-        ShapeElement checkboxOn = new ShapeElement();
-        checkboxOn.setShape(ShapeElement.RECTANGLE);
-        checkboxOn.setRgbColor(RgbPalette.BLUE);
+        VectorElement checkboxOn = new VectorElement(this, ResourceTable.Graphic_checkbox_checked);
         // 未选样式
-        ShapeElement checkboxOff = new ShapeElement();
-        checkboxOff.setShape(ShapeElement.RECTANGLE);
-        checkboxOff.setStroke(3, RgbPalette.BLACK);
+        VectorElement checkboxOff = new VectorElement(this, ResourceTable.Graphic_checkbox_unchecked);
         // 设置样式
         Checkbox checkbox = (Checkbox) findComponentById(ResourceTable.Id_check_box);
         checkbox.setButtonElement(stateElement(checkboxOn, checkboxOff));
@@ -101,7 +88,7 @@ public class ComponentsAbilitySlice extends AbilitySlice {
         // 未选样式
         ShapeElement radioOff = new ShapeElement();
         radioOff.setShape(ShapeElement.OVAL);
-        radioOff.setStroke(3, RgbPalette.BLACK);
+        radioOff.setStroke(3, RgbPalette.BLUE);
         // 设置样式
         RadioButton radioButton1 = (RadioButton) findComponentById(ResourceTable.Id_radio_button_1);
         RadioButton radioButton2 = (RadioButton) findComponentById(ResourceTable.Id_radio_button_2);
@@ -150,7 +137,7 @@ public class ComponentsAbilitySlice extends AbilitySlice {
         super.onForeground(intent);
     }
 
-    private StateElement stateElement(ShapeElement on, ShapeElement off) {
+    private StateElement stateElement(Element on, Element off) {
         StateElement stateElement = new StateElement();
         stateElement.addState(new int[]{ComponentState.COMPONENT_STATE_CHECKED}, on);
         stateElement.addState(new int[]{ComponentState.COMPONENT_STATE_EMPTY}, off);
