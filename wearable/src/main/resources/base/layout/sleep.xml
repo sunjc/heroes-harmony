@@ -9,9 +9,9 @@
     <Image
         ohos:height="32vp"
         ohos:width="32vp"
-        ohos:top_margin="30vp"
         ohos:image_src="$media:sleep"
-        ohos:layout_alignment="horizontal_center"/>
+        ohos:layout_alignment="horizontal_center"
+        ohos:top_margin="30vp"/>
 
     <Text
         ohos:height="20vp"
@@ -110,5 +110,21 @@
             ohos:text="$string:hour"
             ohos:text_color="white"
             ohos:text_size="16vp"/>
+    </DirectionalLayout>
+
+    <DirectionalLayout
+        ohos:height="25vp"
+        ohos:width="match_content"
+        ohos:layout_alignment="horizontal_center"
+        ohos:orientation="horizontal"
+        ohos:top_margin="5vp">
+
+        <Text
+            ohos:id="$+id:device_name"
+            ohos:height="12vp"
+            ohos:width="match_content"
+            ohos:alpha="0.66"
+            ohos:text_color="white"
+            ohos:text_size="10vp"/>
     </DirectionalLayout>
 </DirectionalLayout>

@@ -14,11 +14,9 @@ import ohos.hiviewdfx.HiLogLabel;
 
 public class HeroesComponent implements ComponentOwner {
     private static final String TAG = "HeroesComponent";
-
     private static final HiLogLabel LOG_LABEL = new HiLogLabel(HiLog.LOG_APP, 0x00102, TAG);
 
     private AbilityContext context;
-
     private Component root;
 
     public HeroesComponent(AbilityContext context) {
@@ -50,7 +48,7 @@ public class HeroesComponent implements ComponentOwner {
                 hero.setTextAlignment(TextAlignment.CENTER);
                 hero.setTextColor(Color.WHITE);
                 hero.setWidth(DirectionalLayout.LayoutConfig.MATCH_PARENT);
-                hero.setHeight(80);
+                hero.setHeight(70);
                 layout.addComponent(hero);
             }
         } catch (Exception e) {
