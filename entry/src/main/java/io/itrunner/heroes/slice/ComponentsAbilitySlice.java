@@ -120,7 +120,7 @@ public class ComponentsAbilitySlice extends AbilitySlice {
         Button heroBtn = (Button) findComponentById(ResourceTable.Id_button_hero);
         heroBtn.setClickedListener(component -> terminateAbility());
 
-        // 攻取设备名称
+        // 读取设备名称
         DataAbilityHelper dataAbilityHelper = DataAbilityHelper.creator(this);
         String deviceName = SystemSettings.getValue(dataAbilityHelper, SystemSettings.General.DEVICE_NAME);
         Text deviceNameText = (Text) findComponentById(ResourceTable.Id_device_name);
