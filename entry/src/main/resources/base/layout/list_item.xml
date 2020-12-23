@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <DirectionalLayout
     xmlns:ohos="http://schemas.huawei.com/res/ohos"
-    ohos:height="30vp"
+    ohos:height="match_content"
     ohos:width="match_parent"
     ohos:orientation="horizontal">
 
@@ -9,8 +9,8 @@
         ohos:id="$+id:list_content"
         ohos:height="match_content"
         ohos:width="match_content"
+        ohos:padding="4vp"
         ohos:text="hero"
         ohos:text_alignment="left"
-        ohos:text_size="16vp"
-        ohos:top_padding="4vp"/>
+        ohos:text_size="16fp"/>
 </DirectionalLayout>

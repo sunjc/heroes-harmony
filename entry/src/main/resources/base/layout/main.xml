@@ -53,8 +53,10 @@
 
         <ListContainer
             ohos:id="$+id:search_list"
-            ohos:height="180vp"
-            ohos:width="300vp"/>
+            ohos:height="170vp"
+            ohos:width="330vp"
+            ohos:rebound_effect="true"
+            ohos:shader_color="#90EE90"/>
 
         <Image
             ohos:id="$+id:image_components"
