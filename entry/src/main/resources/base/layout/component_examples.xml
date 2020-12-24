@@ -151,6 +151,7 @@
             ohos:height="40vp"
             ohos:width="300vp"
             ohos:background_element="$graphic:black_border_element"
+            ohos:text_cursor_visible="true"
             ohos:element_cursor_bubble="$graphic:cursor_bubble"
             ohos:hint="Enter password"
             ohos:padding="4vp"
