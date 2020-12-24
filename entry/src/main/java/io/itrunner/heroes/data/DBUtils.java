@@ -8,19 +8,23 @@ import ohos.global.resource.ResourceManager;
 import ohos.hiviewdfx.HiLog;
 import ohos.hiviewdfx.HiLogLabel;
 
+import java.io.File;
+
 public class DBUtils {
     private static final String DATABASE_NAME = "HeroStore.db";
     private static final String DATABASE_NAME_ALIAS = "HeroStore";
+    private static final String DATABASE_DIR = "db";
 
     private static final HiLogLabel LOG_LABEL = new HiLogLabel(HiLog.LOG_APP, 0x00101, "Hero Database");
 
     public static void createDatabase(Context context) {
-        HiLog.info(LOG_LABEL, "create database: %{private}s", DATABASE_NAME_ALIAS);
+        HiLog.info(LOG_LABEL, "create database: %{public}s", DATABASE_NAME_ALIAS);
 
         DatabaseHelper helper = new DatabaseHelper(context);
         helper.getOrmContext(DATABASE_NAME_ALIAS, DATABASE_NAME, HeroStore.class);
 
-        HiLog.info(LOG_LABEL, "local database path: %{public}s", context.getDatabaseDir().getPath());
+        HiLog.info(LOG_LABEL, "local database path: %{public}s", context.getDatabaseDir().listFiles()[0].getPath());
+        HiLog.info(LOG_LABEL, "local database name: %{public}s", context.getDatabaseDir().listFiles()[0].list());
     }
 
     public static void initDatabase(Context context) {
@@ -68,6 +72,17 @@ public class DBUtils {
         HiLog.info(LOG_LABEL, "delete database: %{public}s", name);
         DatabaseHelper helper = new DatabaseHelper(context);
         helper.deleteRdbStore(name);
+    }
+
+    public static boolean existsDatabase(Context context) {
+        File[] files = context.getDatabaseDir().listFiles((file, name) -> DATABASE_DIR.equals(name));
+
+        if (files.length == 0) {
+            return false;
+        }
+
+        files = files[0].listFiles((file, name) -> DATABASE_NAME.equals(name));
+        return files.length > 0;
     }
 
     static OrmContext getOrmContext(Context context) {
