@@ -4,12 +4,8 @@
       "name": "hero",
       "value": [
         {
-          "quantity": "zero",
-          "value": "no hero"
-        },
-        {
           "quantity": "one",
-          "value": "one hero"
+          "value": "%d hero"
         },
         {
           "quantity": "other",
