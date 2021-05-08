@@ -15,7 +15,7 @@ public class PageSliderProviderImpl extends PageSliderProvider {
 
     private static final HiLogLabel LOG_LABEL = new HiLogLabel(HiLog.LOG_APP, 0x00102, TAG);
 
-    private List<ComponentOwner> components = new ArrayList<>();
+    private final List<ComponentOwner> components = new ArrayList<>();
 
     public void addComponent(ComponentOwner component) {
         components.add(component);

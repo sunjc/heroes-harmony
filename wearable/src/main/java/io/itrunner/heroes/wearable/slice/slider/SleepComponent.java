@@ -9,8 +9,8 @@ import ohos.app.AbilityContext;
 import ohos.sysappcomponents.settings.SystemSettings;
 
 public class SleepComponent implements ComponentOwner {
-    private AbilityContext context;
-    private Component root;
+    private final AbilityContext context;
+    private final Component root;
 
     public SleepComponent(AbilityContext context) {
         this.context = context;

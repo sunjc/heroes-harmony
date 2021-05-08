@@ -16,8 +16,8 @@ public class HeroesComponent implements ComponentOwner {
     private static final String TAG = "HeroesComponent";
     private static final HiLogLabel LOG_LABEL = new HiLogLabel(HiLog.LOG_APP, 0x00102, TAG);
 
-    private AbilityContext context;
-    private Component root;
+    private final AbilityContext context;
+    private final Component root;
 
     public HeroesComponent(AbilityContext context) {
         this.context = context;

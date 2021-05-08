@@ -9,6 +9,7 @@ import ohos.hiviewdfx.HiLog;
 import ohos.hiviewdfx.HiLogLabel;
 
 import java.io.File;
+import java.util.Arrays;
 
 public class DBUtils {
     private static final String DATABASE_NAME = "HeroStore.db";
@@ -24,7 +25,7 @@ public class DBUtils {
         helper.getOrmContext(DATABASE_NAME_ALIAS, DATABASE_NAME, HeroStore.class);
 
         HiLog.info(LOG_LABEL, "local database path: %{public}s", context.getDatabaseDir().listFiles()[0].getPath());
-        HiLog.info(LOG_LABEL, "local database name: %{public}s", context.getDatabaseDir().listFiles()[0].list());
+        HiLog.info(LOG_LABEL, "local database name: %{public}s", Arrays.toString(context.getDatabaseDir().listFiles()[0].list()));
     }
 
     public static void initDatabase(Context context) {

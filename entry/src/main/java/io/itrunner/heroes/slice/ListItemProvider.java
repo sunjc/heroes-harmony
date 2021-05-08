@@ -7,9 +7,9 @@ import ohos.agp.components.*;
 
 import java.util.List;
 
-public class ListItemProvider extends RecycleItemProvider {
-    private List<Hero> data;
-    private AbilitySlice slice;
+public class ListItemProvider extends BaseItemProvider {
+    private final List<Hero> data;
+    private final AbilitySlice slice;
 
     ListItemProvider(AbilitySlice abilitySlice, List<Hero> data) {
         slice = abilitySlice;

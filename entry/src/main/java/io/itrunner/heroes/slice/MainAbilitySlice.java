@@ -74,7 +74,7 @@ public class MainAbilitySlice extends AbilitySlice {
 
         // to components page
         Image componentsImg = (Image) findComponentById(ResourceTable.Id_image_components);
-        componentsImg.setClickedListener(component -> gotoPage(ACTION_COMPONENTS));
+        componentsImg.setClickedListener(component -> gotoComponents());
     }
 
     private void bindSearchListener() {
@@ -127,10 +127,10 @@ public class MainAbilitySlice extends AbilitySlice {
         present(new HeroDetailsAbilitySlice(), intent);
     }
 
-    private void gotoPage(String action) {
+    private void gotoComponents() {
         Intent intent = new Intent();
         Operation operation = new Intent.OperationBuilder()
-                .withAction(action)
+                .withAction(ACTION_COMPONENTS)
                 .build();
         intent.setOperation(operation);
 
